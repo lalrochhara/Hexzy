@@ -51,15 +51,15 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hi {}, my name is {}!
-Send me /help for more info
+Chibai le {}, ka hming chu {} ani!
+/help tih hi rawn thawn la tanpuina dang i hriat duh chuan
 """
 
 HELP_STRINGS = """
-Hey there! My name is *{}*.
-I'm Most Powerfull & I help admins to manage their groups!
+Chibai le! Ka hming chu *{}* ani.
+Kei hi group lama admin te tanpui tu tangkai tak ka ni!
 
-*Main* commands available:
+*Main* commands hman theih te:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
  • /donate: information on how to donate!
@@ -68,14 +68,14 @@ I'm Most Powerfull & I help admins to manage their groups!
    • in a group: will redirect you to pm, with all that chat's settings.
 
 {}
-And the following: @MizoInFoTel14
+Chuan kan group hi join ve la: @internethelplinemizo
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
 SAITAMA_IMG = "https://telegra.ph/file/b801207a176b5c76f6f27.jpg"
 
-DONATE_STRING = """Join [Telegram Channel](t.me/MizoInFoTel14)  &  [Telegram Group](t.me/MizoInFoTel1)."""
+DONATE_STRING = """Join [Telegram Channel](t.me/internethelplinemizo²)  &  [Telegram Group](t.me/internethelplinemizo)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -194,18 +194,18 @@ def start(update: Update, context: CallbackContext):
                     [[
                         InlineKeyboardButton(
                              text="  Support Group ",
-                             url="https://t.me/MizoInFoTel1"),
+                             url="https://t.me/internethelplinemizo"),
                          InlineKeyboardButton(
                              text="  Support Channel ",
-                             url="https://t.me/MizoInFoTel14")
+                             url="https://t.me/internethelplinemizo²")
                      ],
                      [
                         InlineKeyboardButton(
                             text="  Youtube Channel ",
-                            url="https://youtube.com/channel/UC-rDf7LGhEkPl35fpJHX6dg"),
+                            url="https://youtube.com/c/nickylalrochhara"),
                          InlineKeyboardButton(
                             text="  Developer ",
-                             url="https://t.me/ZauteKm")        
+                             url="https://t.me/nickylrca")        
                        
                      ], 
                      [
@@ -217,7 +217,7 @@ def start(update: Update, context: CallbackContext):
                     ]]))
     else:
         update.effective_message.reply_text(
-            "Hi! Online turin ka inpeih e!\n<b>Haven't slept since:</b> <code>{}</code>"
+            "Chibai! Online turin ka inpeih e!\n<b>Haven't slept since:</b> <code>{}</code>"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
@@ -534,7 +534,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "I am now online!")
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}", "Ka online hman e!")
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!")

@@ -210,14 +210,14 @@ def start(update: Update, context: CallbackContext):
                      ], 
                      [
                         InlineKeyboardButton(
-                            text=" ➕ Add me to Your Group ",
+                            text=" ➕ I Group ah min add rawh ",
                             url="t.me/{}?startgroup=true".format(
                                 context.bot.username)),
                     
                     ]]))
     else:
         update.effective_message.reply_text(
-            "Chibai! Online turin ka inpeih e!\n<b>Haven't slept since:</b> <code>{}</code>"
+            "Chibai! Online turin ka inpeih e!\n<b>Ka mut loh na chin pawh:</b> <code>{}</code>"
             .format(uptime),
             parse_mode=ParseMode.HTML)
 
@@ -325,7 +325,7 @@ def get_help(update: Update, context: CallbackContext):
                 ]]))
             return
         update.effective_message.reply_text(
-            "Contact me in PM to get the list of possible commands.",
+            "Pm lam ah min be rawh commands hman theih zawng zawng i hriat duh chuan.",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                     text="Help",

@@ -197,7 +197,7 @@ def start(update: Update, context: CallbackContext):
                              url="https://t.me/internethelplinemizo"),
                          InlineKeyboardButton(
                              text="  Support Channel ",
-                             url="https://t.me/internethelplinemizo²")
+                             url="@itmizochannel2")
                      ],
                      [
                         InlineKeyboardButton(

@@ -73,7 +73,7 @@ Chuan kan group hi join ve la: @internethelplinemizo
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-SAITAMA_IMG = "https://telegra.ph/file/b801207a176b5c76f6f27.jpg"
+SAITAMA_IMG = "https://img.wapka.org/002keu.jpg"
 
 DONATE_STRING = """Join [Telegram Channel](t.me/internethelplinemizo²)  &  [Telegram Group](t.me/internethelplinemizo)."""
 

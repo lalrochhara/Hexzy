@@ -71,11 +71,11 @@ Kei hi group lama admin te tanpui tu tangkai tak ka ni!
 Chuan kan group hi join ve la: @internethelplinemizo
 """.format(
     dispatcher.bot.first_name, ""
-    if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+    if not ALLOW_EXCL else "\nCommand zawng zawng hi hemi / emaw ! hmang hian hman theih a ni.\n")
 
 SAITAMA_IMG = "https://img.wapka.org/002keu.jpg"
 
-DONATE_STRING = """Join [Telegram Channel](t.me/ithelplinemizo2)  &  [Telegram Group](t.me/internethelplinemizo)."""
+DONATE_STRING = """Join [Telegram Channel](t.me/itmizochannel2)  &  [Telegram Group](t.me/internethelplinemizo)."""
 
 IMPORTED = {}
 MIGRATEABLE = []

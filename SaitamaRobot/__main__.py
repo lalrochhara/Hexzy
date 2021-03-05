@@ -75,7 +75,7 @@ Chuan kan group hi join ve la: @internethelplinemizo
 
 SAITAMA_IMG = "https://img.wapka.org/002keu.jpg"
 
-DONATE_STRING = """Join [Telegram Channel](t.me/internethelplinemizo²)  &  [Telegram Group](t.me/internethelplinemizo)."""
+DONATE_STRING = """Join [Telegram Channel](t.me/ithelplinemizo2)  &  [Telegram Group](t.me/internethelplinemizo)."""
 
 IMPORTED = {}
 MIGRATEABLE = []

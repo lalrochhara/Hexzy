@@ -716,7 +716,7 @@ Group admins/group owners do not need these commands.
  ╠  /ungban  *:* Ungbans the user, same usage as gban
  ╚  /gbanlist  *:* Outputs a list of gbanned users
 
-Visit @MizoInFoTel14 for more information.
+Visit @Misslianchhiarisupport for more information.
 """
 
 DEV_HANDLER = CommandHandler(("addpiro", "addsudo"), addpiro)

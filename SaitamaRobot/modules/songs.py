@@ -61,7 +61,7 @@ async def download_video(v_url):
     except:
     	return await rkp.edit("`failed to find`")
     type = "audio"
-    await rkp.edit("`Preparing to download...`")
+    await rkp.edit("`Download tur a siam mek a ni...`")
     if type == "audio":
         opts = {
             'format':
@@ -93,7 +93,7 @@ async def download_video(v_url):
         video = False
         song = True    
     try:
-        await rkp.edit("`Fetching data, please wait..`")
+        await rkp.edit("`Data lak mek a ni, lo nghak lawk..`")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -127,7 +127,7 @@ async def download_video(v_url):
         return
     c_time = time.time()
     if song:
-        await rkp.edit(f"`Preparing to upload song:`\
+        await rkp.edit(f"`Hla upload tur a siamrem mek a ni:`\
         \n**{rip_data['title']}**\
         \nby *{rip_data['uploader']}*")
         await v_url.client.send_file(
@@ -141,11 +141,11 @@ async def download_video(v_url):
             ],
             progress_callback=lambda d, t: asyncio.get_event_loop(
             ).create_task(
-                progress(d, t, v_url, c_time, "Uploading..",
+                progress(d, t, v_url, c_time, "Upload mek..",
                          f"{rip_data['title']}.mp3")))
         os.remove(f"{rip_data['id']}.mp3")
     elif video:
-        await rkp.edit(f"`Preparing to upload song :`\
+        await rkp.edit(f"`Hla upload tur a siamrem mek a ni :`\
         \n**{rip_data['title']}**\
         \nby *{rip_data['uploader']}*")
         await v_url.client.send_file(
@@ -155,7 +155,7 @@ async def download_video(v_url):
             caption=url,
             progress_callback=lambda d, t: asyncio.get_event_loop(
             ).create_task(
-                progress(d, t, v_url, c_time, "Uploading..",
+                progress(d, t, v_url, c_time, "Upload mek..",
                          f"{rip_data['title']}.mp4")))
         os.remove(f"{rip_data['id']}.mp4")
 
@@ -179,7 +179,7 @@ async def download_video(v_url):
     except:
     	return await rkp.edit("`failed to find`")
     type = "audio"
-    await rkp.edit("`Preparing to download...`")
+    await rkp.edit("`Download tur a siam mek a ni...`")
     if type == "audio":
         opts = {
             'format':
@@ -208,7 +208,7 @@ async def download_video(v_url):
         song = False
         video = True
     try:
-        await rkp.edit("`Fetching data, please wait..`")
+        await rkp.edit("`Data lak khawm mek ani,lo nghak lawk..`")
         with YoutubeDL(opts) as rip:
             rip_data = rip.extract_info(url)
     except DownloadError as DE:
@@ -242,7 +242,7 @@ async def download_video(v_url):
         return
     c_time = time.time()
     if song:
-        await rkp.edit(f"`Preparing to upload song `\
+        await rkp.edit(f"`Hla upload tur a siamrem mek a ni `\
         \n**{rip_data['title']}**\
         \nby *{rip_data['uploader']}*")
         await v_url.client.send_file(
@@ -256,12 +256,12 @@ async def download_video(v_url):
             ],
             progress_callback=lambda d, t: asyncio.get_event_loop(
             ).create_task(
-                progress(d, t, v_url, c_time, "Uploading..",
+                progress(d, t, v_url, c_time, "Upload mek..",
                          f"{rip_data['title']}.mp3")))
         os.remove(f"{rip_data['id']}.mp3")
         await v_url.delete()
     elif video:
-        await rkp.edit(f"`Preparing to upload video song :`\
+        await rkp.edit(f"`Video upload tur a siam mek a ni :`\
         \n**{rip_data['title']}**\
         \nby *{rip_data['uploader']}*")
         await v_url.client.send_file(
@@ -278,9 +278,10 @@ async def download_video(v_url):
 
 
 __help__ = """
- ➩ /song <songname artist(optional)>: uploads the song in it's best quality available
+ ➩ /song <hla emaw a satu(duh zawk zawk)>: quality tha ber in hla a rawn upload ang
 
- ➩ /video <songname artist(optional)>: uploads the video song in it's best quality available
+ ➩ /video <video emaw a satu(duh zawk zawk)>: quality tha ber in video a rawn upload ang
+
 """
 
 __mod_name__ = "Songs"

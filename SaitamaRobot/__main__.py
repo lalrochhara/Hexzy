@@ -75,7 +75,7 @@ Chuan kan group hi join ve la: @internethelplinemizo
 
 SAITAMA_IMG = "https://img.wapka.org/002keu.jpg"
 
-DONATE_STRING = """Join [Telegram Channel](t.me/itmizochannel2)  &  [Telegram Group](t.me/internethelplinemizo)."""
+DONATE_STRING = """Join [Telegram Channel](t.me/itmizochannel2)  &  [Telegram Group](t.me/misslianchhiarisupport)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -194,7 +194,7 @@ def start(update: Update, context: CallbackContext):
                     [[
                         InlineKeyboardButton(
                              text="  Support Group ",
-                             url="https://t.me/internethelplinemizo"),
+                             url="https://t.me/misslianchhiarisupport"),
                          InlineKeyboardButton(
                              text="  Support Channel ",
                              url="@itmizochannel2")

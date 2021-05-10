@@ -1,0 +1,11 @@
+---
+deployment:
+      tasks:
+        - export DEPLOYPATH=/home/oyukplzn/respiratory/Hexzy
+        - /bin/cp Hexzy $DEPLOYPATH                 
+        - /bin/cp /respiratory/Hexzy $DEPLOYPATH   
+        - /bin cp * $DEPLOYPATH                           
+        - /bin cp /Hexzy/* $DEPLOYPATH             
+        - /bin/cp -r * $DEPLOYPATH                        
+        
+        
